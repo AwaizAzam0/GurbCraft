@@ -1,0 +1,5 @@
+{
+  "name": "GrubCraft",
+  "description": "Live GRUB2 bootloader theme viewer, theme.txt editor, background.png studio, and ZIP theme packager.",
+  "requestFramePermissions": []
+}
