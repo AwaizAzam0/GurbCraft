@@ -106,8 +106,7 @@ export default defineConfig(() => {
       },
     },
     server: {
-      // HMR is disabled in AI Studio via DISABLE_HMR env var or production mode.
-      hmr: process.env.DISABLE_HMR !== 'true' && process.env.NODE_ENV !== 'production' ? { overlay: false } : false,
+      hmr: false,
       watch: process.env.DISABLE_HMR === 'true' ? null : {},
     },
   };
