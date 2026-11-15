@@ -31,6 +31,13 @@
   </head>
   <body class="bg-[#0B0D11] text-[#F1F5F9] antialiased selection:bg-[#3B82F6]/30 selection:text-white">
     <div id="root"></div>
+    <script>
+      window.addEventListener('error', (e) => {
+        if (e.message && (e.message.includes('WebSocket') || e.message.includes('websocket'))) {
+          e.preventDefault();
+        }
+      });
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
